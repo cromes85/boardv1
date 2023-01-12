@@ -4,7 +4,9 @@ function ShibaPrice() {
   const [price, setPrice] = useState(null);
   const [error, setError] = useState(null);
   const [shibaAmount, setShibaAmount] = useState(0);
+  const [applyCommission, setApplyCommission] = useState(false);
   let timeoutId;
+  const commission = 1.49 / 100;
 
   useEffect(() => {
     async function fetchData() {
@@ -29,6 +31,10 @@ function ShibaPrice() {
     setShibaAmount(e.target.value);
   }
 
+  function handleCommissionChange(e) {
+    setApplyCommission(e.target.checked);
+  }
+
   return (
     <div>
       <h2>Prix actuel du Shiba Inu :</h2>
@@ -50,9 +56,17 @@ function ShibaPrice() {
 
       {price && (
         <p>
-          Total en euros : {shibaAmount * price} €
+          Total en euros : {(shibaAmount * price) - (applyCommission ? (shibaAmount * price * commission) : 0)} €
         </p>
       )}
+      <label>
+        Appliquer une commission de 1.49% lors de la vente
+        <input
+          type="checkbox"
+          checked={applyCommission}
+          onChange={handleCommissionChange}
+        />
+      </label>
     </div>
   );
 }
