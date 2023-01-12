@@ -14,6 +14,9 @@ const NavigationPages = () => {
             </NavLink>
             <NavLink to="/infosmagasins">
                 <li  class=" mr-3 inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Infos Magasins</li>
+            </NavLink>
+            <NavLink to="/ShibaPrice">
+            <li  class=" mr-3 inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Crypto</li>
             </NavLink>    
             
         </ul>
