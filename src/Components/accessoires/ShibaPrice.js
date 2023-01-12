@@ -57,16 +57,7 @@ function ShibaPrice() {
         value={shibaAmount}
         onChange={handleAmountChange}
       />
-      {price && (
-        <p>
-          Total en euros :{" "}
-          {shibaAmount * price -
-            (applyCommission
-              ? shibaAmount * price * (commissionRate / 100)
-              : 0)}{" "}
-          €
-        </p>
-      )}
+      {price && <p>Total en euros : {shibaAmount * price} €</p>}
 
       <label>
         Appliquer une commission
