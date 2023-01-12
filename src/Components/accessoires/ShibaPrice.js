@@ -49,7 +49,7 @@ function ShibaPrice() {
 
   return (
     
-      <div>
+      <div class="flex mx-5 my-5">
         <h2>Prix actuel du Shiba Inu :</h2>
         {isLoading ? <p>Chargement...</p> : price ? <p>{price} €</p> : error ? <p>{error}</p> : null}
   
