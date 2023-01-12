@@ -52,14 +52,17 @@ function ShibaPrice() {
       <div class="mx-5 my-5">
         <h2>Prix actuel du Shiba Inu :</h2>
         {isLoading ? <p>Chargement...</p> : price ? <p>{price} €</p> : error ? <p>{error}</p> : null}
-  
+        <br />
         <label htmlFor="shiba-amount">Nombre de pièces de Shiba Inu :</label>
+        <br />
         <input
           type="number"
           id="shiba-amount"
           value={shibaAmount}
           onChange={handleAmountChange}
         />
+        <br />
+        <br />
         {price && <p>Total en euros : {shibaAmount * price} €</p>}
   
         <label>
