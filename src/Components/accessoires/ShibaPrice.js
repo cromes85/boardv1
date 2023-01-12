@@ -86,8 +86,10 @@ function ShibaPrice() {
               €
             </p>
           </div>
+          
         )}
       </div>
+      
     );
   
 }

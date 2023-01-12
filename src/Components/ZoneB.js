@@ -3,7 +3,7 @@ import Office365 from "./OutilsZoneB/Office365";
 import AddText from "./OutilsZoneB/AddText";
 import MyComponent from "./Barres/MyComponent";
 
-import ShibaPrice from "./accessoires/ShibaPrice";
+
 
 function ZoneB() {
   const [buttonNames, setButtonNames] = useState([]);
@@ -76,6 +76,7 @@ function ZoneB() {
         </div>
         <div class="mx-6 border content-center">
         <h3>Outils</h3>
+            
         </div>
       </div>
       
