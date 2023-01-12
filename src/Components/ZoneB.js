@@ -75,7 +75,7 @@ function ZoneB() {
           <div class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded"><button onClick={handleCopyButtonClick}>Copy</button></div>
         </div>
         <div class="mx-6 border content-center">
-        <ShibaPrice/>
+        <h3>Outils</h3>
         </div>
       </div>
       
