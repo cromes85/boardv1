@@ -73,7 +73,7 @@ function ZoneB() {
             </div>
           </div>
         </div>
-        <div class="flex border">
+        <div class=" border">
           
             <Office365 onButtonClick={handleButtonClick} />
          
