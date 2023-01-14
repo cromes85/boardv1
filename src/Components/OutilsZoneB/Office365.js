@@ -9,7 +9,7 @@ function Office365(props) {
   }
 
   return (
-    <div class="py-6 inline-grid grid-cols-3 gap-4 items-center flex-wrap">
+    <div class="py-6 inline-grid grid-cols-3 gap-4 justify-content flex-wrap">
       <a
               
               href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/licenses"
@@ -17,7 +17,7 @@ function Office365(props) {
               
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-2 ring-blue-500">Licences</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Licences</span>
             </a>
             <a
               href="https://admin.exchange.microsoft.com/#/messagetrace"
@@ -25,7 +25,7 @@ function Office365(props) {
               
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Tracking</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Tracking</span>
             </a>
 
             <a
@@ -34,7 +34,7 @@ function Office365(props) {
               
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Exchange</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Exchange</span>
             </a>
 
             <a
@@ -43,7 +43,7 @@ function Office365(props) {
               class=""
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Users</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Users</span>
             </a>
 
             <a
@@ -52,7 +52,7 @@ function Office365(props) {
               class=""
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Quarantaine</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Quarantaine</span>
             </a>
 
             <a
@@ -61,7 +61,7 @@ function Office365(props) {
               class=""
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Ingram1</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Ingram1</span>
             </a>
 
             <a
@@ -70,7 +70,7 @@ function Office365(props) {
               class=""
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Ingram2</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-3 ring-blue-500 shadow-2xl">Ingram2</span>
             </a>
       
     </div>
