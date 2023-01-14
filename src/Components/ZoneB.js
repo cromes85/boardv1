@@ -4,8 +4,6 @@ import AddText from "./OutilsZoneB/AddText";
 import MyComponent from "./Barres/MyComponent";
 import Outils from "./OutilsZoneB/Outils";
 
-
-
 function ZoneB() {
   const [buttonNames, setButtonNames] = useState([]);
   const textInput = useRef(null);
@@ -42,48 +40,48 @@ function ZoneB() {
 
   return (
     <div>
-      <div class="flex justify-center my-2">
-        <Office365 onButtonClick={handleButtonClick} />
-      </div>
-      <div class=" grid grid-cols-3 gap-4 mt-5 mx-5">
-      
-      <div class=" mb-2" >
-        <p>
-          <textarea class="w-full"
-            ref={textInput}
-            value={text + inputValue} // concatène le texte ajouté et le texte existant
-            // readOnly
-            contentEditable
-            style={{
-              whiteSpace: "pre-wrap",
-              minHeight: "100px",
-              minWidth:"100px",
-              height: "auto",
-              
-              overflowY: "scroll",
-              overflowX: "scroll",
-              textAlign: "left",
-              verticalAlign: "top",
-            }}
-          />
-        </p>
-        <div class="w-full">
-      <AddText addText={addText} />
-      </div>
-      </div>
-      <div class="mx-3 content-center ">
-          <div class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded"> <button onClick={handleClearButtonClick}>Clear</button></div>
-          <div class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded"><button onClick={handleCopyButtonClick}>Copy</button></div>
+      <div class=" grid grid-cols-3 gap-4 mt-3 mx-3">
+        <div class=" mb-2">
+          <p>
+            <textarea
+              class="w-full"
+              ref={textInput}
+              value={text + inputValue} // concatène le texte ajouté et le texte existant
+              // readOnly
+              contentEditable
+              style={{
+                whiteSpace: "pre-wrap",
+                minHeight: "100px",
+                minWidth: "100px",
+                height: "auto",
+
+                overflowY: "scroll",
+                overflowX: "scroll",
+                textAlign: "left",
+                verticalAlign: "top",
+              }}
+            />
+          </p>
+          <div class="w-full">
+            <AddText addText={addText} />
+            <div class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">
+              {" "}
+              <button onClick={handleClearButtonClick}>Clear</button>
+            </div>
+            <div class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">
+              <button onClick={handleCopyButtonClick}>Copy</button>
+            </div>
+          </div>
         </div>
-        <div class="mx-6 border content-center">
-        <Outils/>
-            
+        <div class="flex border">
+          
+            <Office365 onButtonClick={handleButtonClick} />
+         
+        </div>
+        <div class="mx-6 border w-full">
+          <Outils />
         </div>
       </div>
-      
-        
-      
-      
     </div>
   );
 }
