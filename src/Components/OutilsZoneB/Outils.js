@@ -5,12 +5,12 @@ const Outils = () => {
     <div>
       <ul class="grid grid-low gap-3">
         <li>
-          <a href="https://chat.openai.com/chat"></a>
-          <img
+          <a href="https://chat.openai.com/chat"> <img
             class="w-10 h-10 rounded-full"
             src="./ia.jpg"
             alt="Rounded avatar"
-          />
+          /></a>
+          
         </li>
         <li>
           <a href="https://www.google.com">Google</a>
