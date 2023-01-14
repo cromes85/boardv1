@@ -39,7 +39,7 @@ function ZoneB() {
   }
 
   return (
-    <div>
+    <div m-8>
       <div class=" grid grid-cols-3 gap-4 mt-3 mx-3">
         <div class="border mx-3 py-3 ">
           <p>
