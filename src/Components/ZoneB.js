@@ -41,7 +41,7 @@ function ZoneB() {
   return (
     <div>
       <div class=" grid grid-cols-3 gap-4 mt-3 mx-3">
-        <div class="border mx-3 py-3 mb-2">
+        <div class="border mx-3 py-3 ">
           <p>
             <textarea
               class="w-full"
