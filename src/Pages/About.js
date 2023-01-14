@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Components/Logo";
+import Logo from "../Components/accessoires/Logo";
 import NavigationPages from "../Components/Barres/NavigationPages";
 
 const About = () => {

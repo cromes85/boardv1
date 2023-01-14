@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom';
 
 function ShibaPrice() {
   const [price, setPrice] = useState(null);
@@ -49,8 +50,13 @@ function ShibaPrice() {
 
   return (
     
-      <div class="mx-5 my-5">
-        <h2>Prix actuel du Shiba Inu :</h2>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <NavLink to="/">
+                <li class="font-bold text-ml underline mb-2 mr-3 inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Accueil</li>
+            </NavLink>
+      <div class="w-full">
+        <div class="px-6 py-4">
+        <h2 class="font-bold text-xl mb-2">Prix actuel du Shiba Inu :</h2>
         {isLoading ? <p>Chargement...</p> : price ? <p>{price} €</p> : error ? <p>{error}</p> : null}
         <br />
         <label htmlFor="shiba-amount">Nombre de pièces de Shiba Inu :</label>
@@ -63,7 +69,7 @@ function ShibaPrice() {
         />
         <br />
         <br />
-        {price && <p>Total en euros : {shibaAmount * price} €</p>}
+        {price && <p class="font-bold text-xl mb-2">Total en euros : {shibaAmount * price} €</p>}
   
         <label>
           Appliquer une commission
@@ -91,8 +97,9 @@ function ShibaPrice() {
           </div>
           
         )}
+        </div>
       </div>
-      
+      </div> 
     );
   
 }
