@@ -17,7 +17,7 @@ function Office365(props) {
               
               onClick={handleClick}
             >
-              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded">Licences</span>
+              <span class="h-10 w-16 my-2  p-1.5 bg-blue-500 hover:bg-blue-700 text-white font-bold px-2.5 border border-blue-700 rounded hover:ring-2 ring-blue-500">Licences</span>
             </a>
             <a
               href="https://admin.exchange.microsoft.com/#/messagetrace"
