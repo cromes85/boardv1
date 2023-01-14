@@ -23,8 +23,12 @@ const Outils = () => {
             href="https://www.google.com"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            Google
+            >
+            <img
+            class="w-10 h-10 rounded-full"
+            src="./google.jpg"
+            a
+          />
           </a>
         </li>
       </ul>
