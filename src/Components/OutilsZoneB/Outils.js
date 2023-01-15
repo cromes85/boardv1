@@ -36,7 +36,7 @@ const Outils = () => {
           
             <NavLink to="/Greetings">
             <img
-            class="w-10 h-10 rounded-full "
+            class="w-10 h-10 rounded-full object-scale-down "
             src="./mem.png"
             
           />
@@ -47,4 +47,4 @@ const Outils = () => {
   );
 };
 
-export default Outils;
+export default Outils
