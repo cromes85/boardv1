@@ -9,7 +9,7 @@ function Office365(props) {
   }
 
   return (
-    <div class="py-6 mx-6 inline-grid grid-cols-3 gap-4  flex-wrap">
+    <div class="grid gap-x-8 gap-y-4 grid-cols-3">
       <a
               
               href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/licenses"
