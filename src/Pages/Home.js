@@ -19,7 +19,7 @@ const Home = () => {
           <NavigationPages />
         </div>
       </div>
-      <div class="mt-4 mb-4 bg-red">
+      <div class="mt-4 mb-4 flex">
         <div><JokeScroller/></div>
         
       </div>
