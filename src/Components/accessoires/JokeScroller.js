@@ -5,7 +5,7 @@ function JokeScroller() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
   useEffect(() => {
-    fetch("/public/blague.json")
+    fetch("./blague.json")
       .then(res => res.json())
       .then(data => setJokes(data))
       .catch(err => console.log(err));
