@@ -5,7 +5,7 @@ function JokeScroller() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
   useEffect(() => {
-    fetch("/public/blague.json")
+    fetch("./blague.json")
       .then(res => res.json())
       .then(data => setJokes(data))
       .catch(err => console.log(err));
@@ -20,8 +20,8 @@ function JokeScroller() {
 
   return (
     <div style={{display: 'flex', flexDirection: 'row-reverse'}}>
-      <p>{jokes[currentJoke]?.joke}</p>
-      <p>{jokes[currentJoke]?.answer}</p>
+      <p class="text-xl">{jokes[currentJoke]?.joke}</p>
+      <p class="text-xl">{jokes[currentJoke]?.answer}</p>
     </div>
   );
 }
