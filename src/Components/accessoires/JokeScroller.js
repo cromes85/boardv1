@@ -7,7 +7,7 @@ function JokeScroller() {
   useEffect(() => {
     fetch("./blague.json")
       .then((res) => res.json())
-      .then((data) => setJokes(data))
+      .then((data) => setJokes(shuffleArray(data)))
       .catch((err) => console.log(err));
   }, []);
 
@@ -17,6 +17,14 @@ function JokeScroller() {
     }, 10000); // 86400000ms = 24h
     return () => clearInterval(interval);
   }, [jokes, currentJoke]);
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
   return (
     <div class="inline-block align-middle text-center">
