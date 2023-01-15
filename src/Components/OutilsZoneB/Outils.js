@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Outils = () => {
   return (
@@ -30,6 +31,16 @@ const Outils = () => {
             
           />
           </a>
+        </li>
+        <li>
+          
+            <NavLink to="/Greetings">
+            <img
+            class="w-10 h-10 rounded-full "
+            src="./mem.png"
+            
+          />
+          </NavLink>
         </li>
       </ul>
     </div>
