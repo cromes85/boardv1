@@ -19,7 +19,7 @@ function JokeScroller() {
   }, [jokes, currentJoke]);
 
   return (
-    <div style={{display: 'flex', flexDirection: 'row-reverse'}}>
+    <div  class="inline-block align-middle text-center">
       <p class="text-xl">{jokes[currentJoke]?.joke}</p>
       <p class="text-xl">{jokes[currentJoke]?.answer}</p>
     </div>
