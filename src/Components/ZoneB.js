@@ -39,9 +39,9 @@ function ZoneB() {
   }
 
   return (
-    <div class="m-8">
-      <div class=" grid grid-cols-3 gap-4 mt-3 mx-3">
-        <div class="border">
+    <div class="">
+      <div class=" grid grid-cols-3 gap-8 mt-3 mx-3">
+        <div class="border rounded-md">
           <p>
             <textarea
               class="w-full"
@@ -52,7 +52,7 @@ function ZoneB() {
               style={{
                 whiteSpace: "pre-wrap",
                 minHeight: "100px",
-                minWidth: "100px",
+                minWidth: "80px",
                 height: "auto",
 
                 overflowY: "scroll",
@@ -73,12 +73,12 @@ function ZoneB() {
             </div>
           </div>
         </div>
-        <div class=" border">
+        <div class=" border rounded-md">
           
             <Office365 onButtonClick={handleButtonClick} />
          
         </div>
-        <div class="mx-6 border w-full">
+        <div class="border rounded-md">
           <Outils />
         </div>
       </div>
