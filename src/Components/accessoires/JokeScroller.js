@@ -28,8 +28,8 @@ function JokeScroller() {
 
   return (
     <div class="inline-block align-middle text-center">
-      <p class="text-xl">{jokes[currentJoke]?.joke}</p>
-      <p class="text-xl">{jokes[currentJoke]?.answer}</p>
+      <p class="text-xl">{jokes[currentJoke]?.joke}  {jokes[currentJoke]?.answer}</p>
+      <p class="text-xl"></p>
     </div>
   );
 }
