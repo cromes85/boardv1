@@ -7,8 +7,8 @@ import JokeScroller from "../Components/accessoires/JokeScroller";
 
 const Home = () => {
   return (
-    <div class="hover:bg-gradient-to-r from-blue-100">
-      <div class="h-48 flex items-stretch justify-around ">
+    <div >
+      <div class=" flex items-stretch justify-around ">
         <div class="self-center ">
           <Connexion />
         </div>
