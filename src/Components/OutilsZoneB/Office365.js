@@ -13,7 +13,7 @@ function Office365(props) {
       <a
               
               href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/licenses"
-              target="_blank"
+              
               rel="noopener noreferrer"
               onClick={handleClick}
             >
@@ -22,7 +22,7 @@ function Office365(props) {
             </a>
             <a
               href="https://admin.exchange.microsoft.com/#/messagetrace"
-              target="_blank"
+              
               rel="noopener noreferrer"
               onClick={handleClick}
             >
@@ -32,7 +32,7 @@ function Office365(props) {
 
             <a
               href="https://admin.exchange.microsoft.com/#/mailboxes"
-              target="_blank"
+              
               rel="noopener noreferrer"
               onClick={handleClick}
             >
