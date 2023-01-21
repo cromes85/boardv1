@@ -33,7 +33,8 @@ const Home = () => {
 
 export default Home;
 
-// Ajout de la classe "container mx-auto" pour que la page soit centrée et responsive, et remplacement des classes "self-center" et "justify-around" par les classes de tailwind correspondantes "self-center" et "justify-around".
+// Ajout de la classe "container mx-auto" pour que la page soit centrée et responsive,
+et remplacement des classes "self-center" et "justify-around" par les classes de tailwind correspondantes "self-center" et "justify-around".
 
 // import React from "react";
 // import Connexion from "../Components/Barres/Connexion";
