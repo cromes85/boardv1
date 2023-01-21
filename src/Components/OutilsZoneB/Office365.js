@@ -41,7 +41,7 @@ function Office365(props) {
         </span>
       </a>
       <a
-        target="_blank"
+        class="block lg:grid col-span-12"
         href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users"
         rel="noopener noreferrer"
         onClick={handleClick}
