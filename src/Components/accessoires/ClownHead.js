@@ -1,27 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import './clownHead.css';
-
+import React, { useState, useEffect } from "react";
+import "./clownHead.css";
 
 const ClownHead = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const [animation, setAnimation] = useState('');
+  const [animation, setAnimation] = useState("");
 
   useEffect(() => {
     if (isHovered) {
-      setAnimation('swing 5s');
+      setAnimation("swing 5s");
     } else {
-      setAnimation('');
+      setAnimation("");
     }
   }, [isHovered]);
 
   return (
-    <div >
+    <div>
       <img
         style={{ animation: animation }}
         src="./crane.jpg"
         alt="Clown Head"
-        onMouseEnter={() => setIsHovered(true)}
-        // onMouseLeave={() => setIsHovered(false)}
+        onMouseEnter={() => {
+          setIsHovered(true);
+          setTimeout(() => {
+            setIsHovered(false);
+          }, 5000);
+        }}
       />
     </div>
   );
