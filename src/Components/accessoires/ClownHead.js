@@ -13,10 +13,10 @@ const ClownHead = () => {
   }, [isHovered]);
 
   return (
-    <div className="center">
+    <div className="flex h-screen items-center justify-center">
       <img
         style={{ animation: animation }}
-        className="clown-head"
+        className="w-32 rounded-full"
         src="./crane.jpg"
         alt="Clown Head"
         onMouseEnter={() => setIsHovered(true)}
