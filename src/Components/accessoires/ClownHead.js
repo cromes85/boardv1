@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import './clownHead.css';
+
+
 const ClownHead = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [animation, setAnimation] = useState('');
@@ -13,7 +16,8 @@ const ClownHead = () => {
   }, [isHovered]);
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    
+    <div>
       <img
         style={{ animation: animation }}
         className="w-32 rounded-full"
