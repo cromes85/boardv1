@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './clownHead.css';
 
 const ClownHead = () => {
   const [animation, setAnimation] = useState('');
@@ -11,7 +12,6 @@ const ClownHead = () => {
     <div>
       <img
         style={{ animation: animation }}
-        className="w-32 rounded-full"
         src="./crane.jpg"
         alt="Clown Head"
       />
