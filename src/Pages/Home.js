@@ -7,30 +7,29 @@ import JokeScroller from "../Components/accessoires/JokeScroller";
 
 const Home = () => {
   return (
-    <div className="relative">
-      <div className="absolute top-0 left-0 z-0">
-        <Logo />
+    <div className="container mx-auto">
+      <div className=" flex items-stretch justify-around">
+        <div className="self-center">
+          <Connexion />
+        </div>
+        <div className="self-center z-0">
+          <Logo />
+        </div>
+        <div className="self-center">
+          <NavigationPages />
+        </div>
       </div>
-      <div className="container mx-auto">
-        <div className=" flex items-stretch justify-around">
-          <div className="self-center">
-            <Connexion />
-          </div>
-          <div className="self-center">
-            <NavigationPages />
-          </div>
-        </div>
-        <div className="mt-4 mb-4 flex justify-center">
-          <div>
-            <JokeScroller />
-          </div>
-        </div>
+      <div className="mt-4 mb-4 flex justify-center">
         <div>
-          <ZoneB />
+          <JokeScroller />
         </div>
+      </div>
+      <div>
+        <ZoneB />
       </div>
     </div>
   );
 };
 
 export default Home;
+
