@@ -51,7 +51,7 @@ function ShibaPrice() {
   return (
     
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <NavLink to="/">
+      <NavLink to="/accueil">
                 <li class="font-bold text-ml underline mb-2 mr-3 inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Accueil</li>
             </NavLink>
       <div class="w-full">
