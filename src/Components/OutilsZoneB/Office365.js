@@ -9,7 +9,7 @@ function Office365(props) {
   }
 
   return (
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 content-center justify-items-center align-middle">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 content-center justify-items-center m-8">
       <a
         class="block lg:grid col-span-12"
         href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/licenses"
