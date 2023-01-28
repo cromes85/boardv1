@@ -9,9 +9,9 @@ function Office365(props) {
   }
 
   return (
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 content-center justify-items-center m-8">
+    <div class="grid md:grid-cols-1 grid-cols-3 md:grid-cols-1 lg:gap-4  items-center justify-items-center m-8 p8">
       <a
-        class="block lg:grid col-span-12"
+        class="block grid col-span-12 "
         href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/licenses"
         rel="noopener noreferrer"
         onClick={handleClick}
@@ -21,7 +21,7 @@ function Office365(props) {
         </span>
       </a>
       <a
-        class="block lg:grid col-span-12"
+        class="block grid col-span-12"
         href="https://admin.exchange.microsoft.com/#/messagetrace"
         rel="noopener noreferrer"
         onClick={handleClick}
@@ -31,7 +31,7 @@ function Office365(props) {
         </span>
       </a>
       <a
-        class="block lg:grid col-span-12"
+        class="block grid col-span-12"
         href="https://admin.exchange.microsoft.com/#/mailboxes"
         rel="noopener noreferrer"
         onClick={handleClick}
@@ -41,7 +41,7 @@ function Office365(props) {
         </span>
       </a>
       <a
-        class="block lg:grid col-span-12"
+        class="block grid col-span-12"
         href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users"
         rel="noopener noreferrer"
         onClick={handleClick}
